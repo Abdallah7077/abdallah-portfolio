@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="images/portfolio.png">
+  <title>Abdallah Ahmed | Front-End Developer</title>
+</head>
+<body data-lang="ar">
+
+<div id="scrollProgress"></div>
+<div class="toast-msg" id="toast">✅ تم الإرسال بنجاح!</div>
+<a class="back-top" id="backTop" href="#home"><i class="fas fa-arrow-up"></i></a>
+
+<nav class="portfolio-nav" id="navbar">
+  <a class="nav-logo" href="#home">A.</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"     data-ar="عني"     data-en="About">عني</a></li>
+    <li><a href="#skills"    data-ar="مهاراتي" data-en="Skills">مهاراتي</a></li>
+    <li><a href="#projects"  data-ar="مشاريعي" data-en="Projects">مشاريعي</a></li>
+    <li><a href="#education" data-ar="تعليمي"  data-en="Education">تعليمي</a></li>
+    <li><a href="#contact"   data-ar="تواصل"   data-en="Contact">تواصل</a></li>
+    <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
+  </ul>
+  <div style="display:flex;gap:0.8rem;align-items:center;">
+    <button class="theme-btn" id="themeBtn" title="Toggle Theme"><i id="themeIcon" class="fas fa-sun"></i></button>
+    <button class="lang-btn d-lg-none d-block" onclick="toggleLang()" id="langBtnMob">EN</button>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div><div class="hero-line"></div><div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag animate__animated animate__fadeInDown" data-ar="مطور ويب محترف" data-en="Professional Web Developer">مطور ويب محترف</div>
+    <h1 class="hero-name animate__animated animate__fadeInUp animate__delay-1s">Abdallah Ahmed<span data-ar="المطوّر" data-en="Developer">المطوّر</span></h1>
+    <p class="hero-title-text animate__animated animate__fadeInUp animate__delay-1s">Front-End Developer</p>
+    <div class="typing-wrap animate__animated animate__fadeIn animate__delay-2s"><span id="typingText"></span><span class="typing-cursor">|</span></div>
+    <p class="hero-desc animate__animated animate__fadeInUp animate__delay-2s"
+       data-ar="أبني تجارب رقمية استثنائية بأحدث تقنيات الويب. شغفي هو تحويل الأفكار إلى واجهات جميلة وفعّالة."
+       data-en="I build exceptional digital experiences with the latest web technologies. My passion is turning ideas into beautiful and effective interfaces.">
+      أبني تجارب رقمية استثنائية بأحدث تقنيات الويب. شغفي هو تحويل الأفكار إلى واجهات جميلة وفعّالة.
+    </p>
+    <div class="hero-cta animate__animated animate__fadeInUp animate__delay-2s">
+      <a href="#projects" class="btn-gold" data-ar="مشاهدة الأعمال" data-en="View Projects">مشاهدة الأعمال</a>
+      <a href="#contact" class="btn-outline" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+      <a href="https://drive.google.com/file/d/1Z4NTsuev81ODn3zsgbCigQ1oPHB_mk4D/view?usp=sharing" target="_blank" class="btn-cv"><i class="fas fa-download"></i><span data-ar="تحميل CV" data-en="Download CV">تحميل CV</span></a>
+    </div>
+    <div class="hero-stats animate__animated animate__fadeInUp animate__delay-2s">
+      <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label" data-ar="سنوات دراسة" data-en="Study Years">سنوات دراسة</div></div>
+      <div class="stat-item"><div class="stat-num">2+</div><div class="stat-label" data-ar="مشاريع" data-en="Projects">مشاريع</div></div>
+      <div class="stat-item"><div class="stat-num">8+</div><div class="stat-label" data-ar="تقنيات" data-en="Technologies">تقنيات</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll" data-ar="تمرير" data-en="Scroll">تمرير</div>
+</section>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about" class="portfolio-section section-divider">
+  <div class="about-grid">
+    <div class="about-img-wrap scroll-animate" data-anim="animate__fadeInRight animate__slower">
+      <img src="images/ChatGPT Image Mar 4, 2026, 12_15_16 PM.png" alt="Abdallah Ahmed" class="about-img"/>
+      <div class="about-corner tl"></div><div class="about-corner br"></div>
+      <div class="about-badge">
+        <span>2025</span>
+        <span data-ar="خريج امتياز" data-en="Grad — Excellent">خريج امتياز</span>
+      </div>
+    </div>
+    <div class="about-text scroll-animate" data-anim="animate__fadeInLeft animate__slower">
+      <div class="section-header">
+        <div class="section-num" data-ar="01 — عني" data-en="01 — About Me">01 — عني</div>
+        <h2 class="section-title" data-ar="من أنا؟" data-en="Who Am I?">من أنا؟</h2>
+      </div>
+      <p data-ar="أنا عبدالله أحمد، مطور Front-End متخصص في Angular، خريج بكالوريوس علوم الحاسوب من المعهد التكنولوجي العالي بالشرقية 2025، بتقدير عام جيد ومشروع تخرج بتقدير امتياز."
+         data-en="I'm Abdallah Ahmed, a Junior Front-End Developer specializing in Angular. I graduated with a B.Sc. in Computer Science from the Higher Technological Institute – Al-Sharqia in 2025, with a Very Good grade and an Excellent graduation project.">
+        أنا عبدالله أحمد، مطور Front-End متخصص في Angular، خريج بكالوريوس علوم الحاسوب من المعهد التكنولوجي العالي بالشرقية 2025، بتقدير عام جيد ومشروع تخرج بتقدير امتياز.
+      </p>
+      <p data-ar="أهتم بالتفاصيل الدقيقة وأسعى دائماً لتقديم تجربة مستخدم سلسة وجميلة. حاصل على دبلومة تطوير الواجهات الأمامية من Route IT Training Center، وأطور مهاراتي في Angular وTypeScript يومياً."
+         data-en="I pay great attention to detail and always strive to deliver a smooth and beautiful user experience. I hold a Frontend Development Diploma from Route IT Training Center and continuously improve my Angular and TypeScript skills.">
+        أهتم بالتفاصيل الدقيقة وأسعى دائماً لتقديم تجربة مستخدم سلسة وجميلة. حاصل على دبلومة تطوير الواجهات الأمامية من Route IT Training Center، وأطور مهاراتي في Angular وTypeScript يومياً.
+      </p>
+      <div class="about-info">
+        <div class="info-item">
+          <div class="info-label" data-ar="الموقع" data-en="Location">الموقع</div>
+          <div class="info-value">القاهرة، مصر 🇪🇬</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label" data-ar="التخصص" data-en="Specialty">التخصص</div>
+          <div class="info-value">Front-End / Angular</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label" data-ar="التقدير" data-en="Grade">التقدير</div>
+          <div class="info-value" data-ar="جيد جدا" data-en="Very Good">جيد جدا</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label" data-ar="الاهتمام" data-en="Interest">الاهتمام</div>
+          <div class="info-value">UI/UX & Web Dev</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+<section id="skills" class="portfolio-section section-divider">
+  <div class="section-header scroll-animate" data-anim="animate__fadeInUp">
+    <div class="section-num" data-ar="02 — مهاراتي" data-en="02 — My Skills">02 — مهاراتي</div>
+    <h2 class="section-title" data-ar="التقنيات التي أتقنها" data-en="Technologies I Master">التقنيات التي أتقنها</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card" data-delay="0">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">HTML5 & CSS3</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+      <div class="skill-level" data-ar="متقدم — 90%" data-en="Advanced — 90%">متقدم — 90%</div>
+    </div>
+    <div class="skill-card" data-delay="100">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">JavaScript (ES6)</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div>
+      <div class="skill-level" data-ar="جيد — 70%" data-en="Good — 70%">جيد — 70%</div>
+    </div>
+    <div class="skill-card" data-delay="200">
+      <div class="skill-icon">🔷</div>
+      <div class="skill-name">TypeScript</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="60"></div></div>
+      <div class="skill-level" data-ar="متوسط — 40%" data-en="Intermediate — 40%">متوسط — 40%</div>
+    </div>
+    <div class="skill-card" data-delay="300">
+      <div class="skill-icon">🔺</div>
+      <div class="skill-name">Angular</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div>
+      <div class="skill-level" data-ar="متوسط — 55%" data-en="Intermediate — 55%">متوسط — 55%</div>
+    </div>
+    <div class="skill-card" data-delay="400">
+      <div class="skill-icon">🅱️</div>
+      <div class="skill-name">Bootstrap 5</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+      <div class="skill-level" data-ar="متقدم — 85%" data-en="Advanced — 85%">متقدم — 85%</div>
+    </div>
+    <div class="skill-card" data-delay="500">
+      <div class="skill-icon">💨</div>
+      <div class="skill-name">Tailwind CSS</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+      <div class="skill-level" data-ar="جيد — 75%" data-en="Good — 75%">جيد — 75%</div>
+    </div>
+    <div class="skill-card" data-delay="600">
+      <div class="skill-icon">🎯</div>
+      <div class="skill-name">UI/UX — Figma</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div>
+      <div class="skill-level" data-ar="جيد — 70%" data-en="Good — 70%">جيد — 70%</div>
+    </div>
+    <div class="skill-card" data-delay="700">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Git & GitHub</div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+      <div class="skill-level" data-ar="جيد — 75%" data-en="Good — 75%">جيد — 75%</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<section id="projects" class="portfolio-section section-divider">
+  <div class="section-header scroll-animate" data-anim="animate__fadeInUp">
+    <div class="section-num" data-ar="03 — مشاريعي" data-en="03 — My Projects">03 — مشاريعي</div>
+    <h2 class="section-title" data-ar="أبرز الأعمال" data-en="Featured Works">أبرز الأعمال</h2>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Bakery Website -->
+    <div class="project-card" data-delay="0">
+      <div class="project-thumb">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Bakery Website"/>
+        <div class="project-overlay">
+          <a href="https://abdallah7077.github.io/Bakery-Website/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Abdallah7007/Bakery-Website" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span></div>
+        <h3 class="project-title" data-ar="موقع المخبز" data-en="Bakery Website">موقع المخبز</h3>
+        <p class="project-desc"
+           data-ar="موقع مخبز احترافي ومتجاوب بواجهة نظيفة وعصرية، مع تصميم يركز على تجربة المستخدم وتوافق جميع الأجهزة."
+           data-en="A professional responsive bakery website with a clean modern UI, focused on user experience and cross-device compatibility.">
+          موقع مخبز احترافي ومتجاوب بواجهة نظيفة وعصرية، مع تصميم يركز على تجربة المستخدم وتوافق جميع الأجهزة.
+        </p>
+      </div>
+    </div>
+
+    <!-- Property Website -->
+    <div class="project-card" data-delay="150">
+      <div class="project-thumb">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Property Website"/>
+        <div class="project-overlay">
+          <a href="https://abdallah7077.github.io/Property/" target="_blank" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+          <a href="https://github.com/Abdallah7007/Property" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Tailwind</span></div>
+        <h3 class="project-title" data-ar="موقع العقارات" data-en="Property Website">موقع العقارات</h3>
+        <p class="project-desc"
+           data-ar="موقع عقارات متجاوب يعرض القوائم العقارية بواجهة سهلة الاستخدام وتصميم جذاب باستخدام Tailwind CSS."
+           data-en="A responsive real estate website showcasing property listings with an intuitive UI and modern design using Tailwind CSS.">
+          موقع عقارات متجاوب يعرض القوائم العقارية بواجهة سهلة الاستخدام وتصميم جذاب باستخدام Tailwind CSS.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ EDUCATION ═══════════════════════════════ -->
+<section id="education" class="portfolio-section section-divider">
+  <div class="section-header scroll-animate" data-anim="animate__fadeInUp">
+    <div class="section-num" data-ar="04 — تعليمي" data-en="04 — Education">04 — تعليمي</div>
+    <h2 class="section-title" data-ar="التعليم والشهادات" data-en="Education & Certificates">التعليم والشهادات</h2>
+  </div>
+
+  <div class="edu-timeline scroll-animate" data-anim="animate__fadeInUp">
+
+    <!-- University -->
+    <div class="edu-item">
+      <div class="edu-date" data-ar="أغسطس 2021 — سبتمبر 2025" data-en="Aug 2021 — Sept 2025">أغسطس 2021 — سبتمبر 2025</div>
+      <div class="edu-degree" data-ar="بكالوريوس علوم الحاسوب" data-en="B.Sc. Computer Science">بكالوريوس علوم الحاسوب</div>
+      <div class="edu-school" data-ar="المعهد التكنولوجي العالي — العاشر من رمضان، الشرقية" data-en="Higher Technological Institute — Al-Sharqia">المعهد التكنولوجي العالي — العاشر من رمضان، الشرقية</div>
+      <div class="edu-meta">
+        <span class="edu-badge" data-ar="تقدير: جيد جدا" data-en="Grade: Very Good">تقدير: جيد جدا</span>
+        <span class="edu-badge edu-badge--gold" data-ar="مشروع التخرج: امتياز" data-en="Graduation Project: Excellent">مشروع التخرج: امتياز ⭐</span>
+      </div>
+      <div class="edu-tags"><span class="tag">CS</span><span class="tag">Programming</span><span class="tag">Algorithms</span><span class="tag">AI</span></div>
+    </div>
+
+    <!-- Route Diploma -->
+    <div class="edu-item">
+      <div class="edu-date" data-ar="أكتوبر 2023" data-en="October 2023">أكتوبر 2023</div>
+      <div class="edu-degree" data-ar="دبلومة تطوير الواجهات الأمامية" data-en="Frontend Development Diploma">دبلومة تطوير الواجهات الأمامية</div>
+      <div class="edu-school" data-ar="Route IT Training Center" data-en="Route IT Training Center">Route IT Training Center</div>
+      <div class="edu-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">Bootstrap</span><span class="tag">Angular</span></div>
+    </div>
+
+    <!-- NTI -->
+    <div class="edu-item">
+      <div class="edu-date" data-ar="قريباً" data-en="Expected">قريباً</div>
+      <div class="edu-degree" data-ar="تدريب تطوير الويب" data-en="Web Development Training">تدريب تطوير الويب</div>
+      <div class="edu-school">NTI — National Telecommunication Institute</div>
+      <div class="edu-tags"><span class="tag">Web Dev</span><span class="tag">Training</span></div>
+    </div>
+
+  </div>
+
+  <!-- Certificates grid -->
+  <div class="cert-grid">
+    <div class="cert-card" data-delay="0">
+      <div class="cert-icon">🏆</div>
+      <div class="cert-body">
+        <div class="cert-title" data-ar="دبلومة تطوير الواجهات الأمامية" data-en="Frontend Development Diploma">دبلومة تطوير الواجهات الأمامية</div>
+        <div class="cert-issuer">Route IT Training Center</div>
+        <div class="cert-date">Oct 2023</div>
+      </div>
+    </div>
+    <div class="cert-card" data-delay="100">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-body">
+        <div class="cert-title" data-ar="بكالوريوس علوم الحاسوب — امتياز في المشروع" data-en="B.Sc. Computer Science — Excellent Project">بكالوريوس علوم الحاسوب — امتياز في المشروع</div>
+        <div class="cert-issuer" data-ar="المعهد التكنولوجي العالي" data-en="Higher Technological Institute">المعهد التكنولوجي العالي</div>
+        <div class="cert-date">Sept 2025</div>
+      </div>
+    </div>
+    <div class="cert-card" data-delay="200">
+      <div class="cert-icon">🎯</div>
+      <div class="cert-body">
+        <div class="cert-title" data-ar="تصميم UI/UX — Figma" data-en="UI/UX Design — Figma">تصميم UI/UX — Figma</div>
+        <div class="cert-issuer">Self-Study / Figma</div>
+        <div class="cert-date">2024</div>
+      </div>
+    </div>
+    <div class="cert-card" data-delay="300">
+      <div class="cert-icon">📜</div>
+      <div class="cert-body">
+        <div class="cert-title" data-ar="تدريب تطوير الويب" data-en="Web Development Training">تدريب تطوير الويب</div>
+        <div class="cert-issuer">NTI</div>
+        <div class="cert-date" data-ar="قريباً" data-en="Expected">قريباً</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section id="contact" class="portfolio-section section-divider">
+  <div class="section-header scroll-animate" data-anim="animate__fadeInUp">
+    <div class="section-num" data-ar="05 — تواصل معي" data-en="05 — Contact Me">05 — تواصل معي</div>
+    <h2 class="section-title" data-ar="هل لديك مشروع؟" data-en="Have a Project?">هل لديك مشروع؟</h2>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info scroll-animate" data-anim="animate__fadeInRight animate__slower">
+      <h3 data-ar="لنبني شيئاً مميزاً معاً" data-en="Let's Build Something Great">لنبني شيئاً <span style="color:var(--gold)">مميزاً</span> معاً</h3>
+      <p data-ar="سواء كان مشروعاً جديداً أو تطوير موقع قائم، أنا هنا للمساعدة."
+         data-en="Whether it's a new project or developing an existing site, I'm here to help.">
+        سواء كان مشروعاً جديداً أو تطوير موقع قائم، أنا هنا للمساعدة.
+      </p>
+      <div class="contact-links">
+        <a href="tel:+201119060671" class="contact-link">
+          <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+          (+2) 01119060671
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=abdallah71a7@gmail.com" target="_blank" class="contact-link">
+          <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+          abdallah71a7@gmail.com
+        </a>
+        <a href="https://github.com/Abdallah7007" target="_blank" class="contact-link">
+          <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+          github.com/Abdallah7007
+        </a>
+        <a href="https://www.linkedin.com/in/abdallah-ahmed71" target="_blank" class="contact-link">
+          <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+          linkedin.com/in/abdallah-ahmed71
+        </a>
+        <a href="https://www.facebook.com/abdallah.ahmed.568895" target="_blank" class="contact-link">
+          <div class="contact-link-icon"><i class="fab fa-facebook"></i></div>
+          facebook.com/abdallah.ahmed.568895
+        </a>
+      </div>
+    </div>
+    <form class="contact-form scroll-animate" data-anim="animate__fadeInLeft animate__slower" id="contactForm">
+      <div class="form-group">
+        <label data-ar="الاسم" data-en="Name">الاسم</label>
+        <input type="text" name="from_name" id="nameInput" data-placeholder-ar="اسمك الكريم" data-placeholder-en="Your Name" required/>
+      </div>
+      <div class="form-group">
+        <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+        <input type="email" name="from_email" placeholder="email@example.com" required/>
+      </div>
+      <div class="form-group">
+        <label data-ar="رسالتك" data-en="Your Message">رسالتك</label>
+        <textarea name="message" id="msgInput" data-placeholder-ar="أخبرني عن مشروعك..." data-placeholder-en="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn-gold" style="align-self:flex-start" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<div class="portfolio-footer">
+  <div class="footer-logo">Abdallah.</div>
+  <div class="footer-copy" data-ar="© 2025 — جميع الحقوق محفوظة" data-en="© 2025 — All Rights Reserved">© 2025 — جميع الحقوق محفوظة</div>
+  <div class="footer-social">
+    <a href="https://github.com/Abdallah7007" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/abdallah-ahmed71" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/abdallah.ahmed.568895" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
