@@ -302,9 +302,6 @@ nav.portfolio-nav.scrolled { padding: 0.6rem 3rem; }
   color: var(--gold);
   background: rgba(201,168,76,0.06);
 }
-
-
-
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .about-grid { grid-template-columns: 1fr; }
