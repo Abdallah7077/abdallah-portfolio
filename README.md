@@ -19,7 +19,6 @@ Welcome to my personal portfolio website built to showcase my projects and front
 ## 📂 Featured Projects
 - Bakery Website
 - Real Estate Website
-- Todo App
 
 ---
 
